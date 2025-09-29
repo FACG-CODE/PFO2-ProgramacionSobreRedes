@@ -62,11 +62,11 @@ def iniciar_flask():
     app = Flask(__name__)
     @app.route('/bienvenida')
     def renderizar():
-        return render_template('bienvenida.html')  # Renderiza el archivo bienvenida.html
+        return render_template('bienvenida.html') # Renderiza el archivo bienvenida.html
     def abrir_navegador():
         webbrowser.open_new("http://127.0.0.1:5000/bienvenida")
     threading.Timer(1, abrir_navegador).start()  # Abre el navegador después de 1 segundo
-    app.run(port=5000)  # Inicia el servidor Flask en el puerto 5000
+    app.run(port=5000) # Inicia el servidor Flask en el puerto 5000
 
 # Función para mostrar el menú de consola y manejar la interacción del usuario
 def menu_consola():
@@ -116,5 +116,5 @@ def menu_consola():
             exit(0) 
 
 if __name__ == "__main__": # Corre el programa
-    inicializar_db()   # Crea la base de datos si no existe
-    menu_consola()     # Muestra el menú de consola
+    inicializar_db() # Crea la base de datos si no existe
+    menu_consola() # Muestra el menú de consola
