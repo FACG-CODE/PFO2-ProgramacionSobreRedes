@@ -36,7 +36,7 @@ PFO2-PROGRAMACIONSOBREREDES/
 └── 📝 README.md                   # Documentación del proyecto
 ```
 
-Se cubren los objetivos del PFO 2:
+## 📝 Se cubren los objetivos del PFO 2:
 
 1. Implementar una API REST con endpoints funcionales.
 2. Usar autenticación con protección de contraseñas (hash).
